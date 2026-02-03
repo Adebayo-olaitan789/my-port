@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
+import mine from "../assets/image/mine.png";
 
 const About = () => {
   return (
@@ -15,7 +16,12 @@ const About = () => {
             <div className="section-content">
               <Row className="align-items-center">
                 <Col lg={5} className="mb-4 mb-lg-0">
-                  
+                  <img
+                    src={mine}
+                    alt="About Me"
+                    className="img-fluid rounded"
+                    style={{ boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2)" }}
+                  />
                 </Col>
                 <Col lg={7}>
                   <h3 className="mb-4">Who I Am</h3>
@@ -83,8 +89,8 @@ const About = () => {
                               index === 0
                                 ? "code-slash"
                                 : index === 1
-                                ? "server"
-                                : "palette"
+                                  ? "server"
+                                  : "palette"
                             } fs-2`}
                           ></i>
                         </div>

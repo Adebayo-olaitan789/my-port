@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { useEffect, useRef } from "react";
+import mine from "../assets/image/mine.png";
 
 const Hero = () => {
   const textRef = useRef(null);
@@ -60,7 +61,16 @@ const Hero = () => {
           </Col>
           <Col lg={4} className="d-none d-lg-block text-center">
             <div className="profile-img-container">
-              
+              <img
+                src={mine}
+                alt="Profile"
+                className="img-fluid rounded-circle profile-img"
+                style={{
+                  maxWidth: "150px",
+                  border: "5px solid rgba(255, 255, 255, 0.1)",
+                  boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)",
+                }}
+              />
             </div>
           </Col>
         </Row>
